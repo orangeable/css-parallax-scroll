@@ -8,4 +8,4 @@ Create a parallax scrolling effect with pure CSS that works in all major desktop
 
 ## Read our detailed article:
 
-[How to Create a Parallax Scrolling Effect with CSS in All Modern Browsers](https://orangeable.com/css/parallax-scroll)
+[How to Create a Parallax Scrolling Effect with CSS](https://orangeable.com/css/parallax-scroll)
