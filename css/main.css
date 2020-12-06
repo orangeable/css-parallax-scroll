@@ -1,0 +1,87 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+    -webkit-perspective: 1px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+div.parallax {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+div.parallax:after {
+    background-image: url("/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    content: "";
+    transform: translateZ(-1px) scale(2);
+    -webkit-transform: translateZ(-1px) scale(2);
+}
+
+h1 {
+    width: 60%;
+    font-family: "Arial";
+    font-size: 100pt;
+    color: #222;
+    text-align: right;
+    padding: 20vh 175px;
+    margin: 0px;
+    float: right;
+}
+
+div.content-outer {
+    width: 100%;
+    background-color: white;
+    perspective: 2px;
+    -webkit-perspective: 2px;
+}
+
+div.content-inner {
+    width: 1200px;
+    font-family: "Arial";
+    font-size: 13pt;
+    color: #333;
+    line-height: 1.40em;
+    padding: 50px 20px;
+    margin: 0px auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        width: 88%;
+        font-size: 50pt;
+        padding: 10vh 20px;
+        float: none;
+    }
+
+    div.content-inner {
+        width: 80%;
+        text-align: justify;
+        padding: 20px 0px;
+    }
+}
